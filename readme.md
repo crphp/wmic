@@ -1,8 +1,10 @@
 # crphp/wmic
-Está biblioteca faz uso do **WQL (WMI Query Language)** para disparar consultas 
-remotas a máquinas Windows. Sua única função é realizar consultas, caso sua intenção seja, 
-além de consultar, manipular os recursos da máquina, utilize a biblioteca [crphp/wmi](http://github.com/crphp/wmi)
-porém, tenha em mente que a mesma é um pouco mais lenta na realização das tarefas.
+Está biblioteca faz uso do **WQL (WMI Query Language)** para disparar exclusivamente **consultas** 
+remotas a máquinas Windows.
+
+>**crphp/wmi** e **crphp/wmic** possuem os mesmos recursos de consulta, porém, somente 
+[crphp/wmi](https://github.com/crphp/wmi) tem a capacidade de gerenciar recursos remotos, 
+como parar serviços, matar processos etc.
 
 Está biblioteca segue os padrões descritos na [PSR-2](http://www.php-fig.org/psr/psr-2/), logo, 
 isso implica que a mesma está em conformidade com a [PSR-1](http://www.php-fig.org/psr/psr-1/).
@@ -54,7 +56,7 @@ Cliente
 
 ## 4 - <a id="compilando"></a>Compilando e testando o WMIC
 Estou presupondo que você já tem uma distribuição GNU/Linux, preferencialmente 
-Debian >= 8.5.0, com Apache e PHP devidamente configurados.
+Debian, com Apache e PHP devidamente configurados.
 
 ### 4.1 - autoconf
 Instalando autoconf, make e gcc:
