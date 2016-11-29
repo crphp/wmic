@@ -1,0 +1,27 @@
+{
+    "name": "crphp/wmic",
+    "type": "library",
+    "description": "Está biblioteca disponibiliza um mecanismo para CONSULTAR máquinas Windows remotamente",
+    "keywords": ["wmi", "acesso remoto"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/crphp/wmic/issues",
+        "source": "https://github.com/crphp/wmic"
+    },
+    "authors": [
+        {
+            "name": "Fábio Jânio",
+            "email": "contato@fabiojanio.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.12",
+        "crphp/core": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Crphp\\Wmic\\": "src/"
+            }
+    },
+    "minimum-stability": "dev"
+}
